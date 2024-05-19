@@ -24,7 +24,7 @@ function SvgComponent({
   }
 
   if (error) {
-    return "An error occurred";
+    return "Icon not found.";
   }
 
   if (loading) {
