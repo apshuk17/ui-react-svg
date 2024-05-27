@@ -18,7 +18,7 @@ const useLazySvg = (name: SvgNamesType | undefined) => {
       const importIcon = async () => {
         try {
           importRef.current = (
-            await import(`../assets/images/${SvgNames[name]}.svg`)
+            await import(`../svgs/${SvgNames[name]}.svg`)
           ).default;
 
           if (importRef.current instanceof Error) throw importRef.current;
